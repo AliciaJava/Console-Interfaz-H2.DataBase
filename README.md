@@ -26,27 +26,30 @@ Instala Maven para gestionar dependencias.
 
 2. **Configura la base de datos**:
 
-El proyecto ya está configurado para utilizar H2 en memoria. No es necesario realizar ninguna configuración adicional para la base de datos. Esta se creará automáticamente a través de las clases Entity mapeadas por JPA y Hibernate.
+El proyecto ya está configurado para utilizar H2 en memoria. No es necesario realizar ninguna configuración adicional para la base de datos. 
+Esta se creará automáticamente a través de las clases Entity mapeadas por JPA y Hibernate.
 
-1. **Ejecuta el proyecto**:
+3. **Ejecuta el proyecto**:
+
 Para ejecutar la aplicación, utiliza el siguiente comando:
 mvn spring-boot:run
+
 Utiliza RUN US desde STS IDE ECLIPSE
 
-![RUN US CONSOLE-H2 DATABASE](https://github.com/user-attachments/assets/8c891036-8c58-46df-9e73-5089ff8d9572)
+![alt text](<RUN US CONSOLE-H2.DATABASE-1.png>)
 
-4.**Acceso a la Consola H2**
+4. **Acceso a la Consola H2**
 Una vez que el proyecto esté en ejecución, dirígete a la siguiente URL en tu navegador:
 <http://localhost:8080/h2-console>
 
-![URL](https://github.com/user-attachments/assets/38e085cb-e8ca-4d97-99f2-8152154cdf94)
+![alt text](URL-1.png)
 
 En la pantalla de acceso, configura la conexión con la siguiente URL JDBC que se genera automáticamente cada vez que inicias el proyecto.
 
 Ejemplo de URL JDBC:
 jdbc:h2:mem:196b43f4-768a-4530-a78e-821587e3b808
 
-5. **El resto de los campos pueden dejarse por defecto**:
+1. **El resto de los campos pueden dejarse por defecto**:
 
 Driver Class: org.h2.Driver
 User Name: sa
@@ -64,26 +67,26 @@ Nota: La URL JDBC cambia cada vez que se reinicia la aplicación, por lo que deb
 
 **Pasos a seguir para usar la consola H2**:
 
-1. **Ejecuta el proyecto**:
+2. **Ejecuta el proyecto**:
 
 Al ejecutar el proyecto, se generará un código único que se debe utilizar en la URL JDBC para conectarse a la base de datos en memoria desde la interfaz de usuario de H2 Console.
 
-1. **Ejemplo de salida en la consola de ejecución**:
+3. **Ejemplo de salida en la consola de ejecución**:
 
 H2 console available at '/h2-console'.
 Database available at 'jdbc:h2:mem:196b43f4-768a-4530-a78e-821587e3b808'
 
-![RUN US CONSOLE-H2 DATABASE](https://github.com/user-attachments/assets/8c891036-8c58-46df-9e73-5089ff8d9572)
+![alt text](<RUN US CONSOLE-H2.DATABASE.png>)
 
-1. **Accede a la consola de H2**:
+4. **Accede a la consola de H2**:
 
 El puerto en el que está corriendo la aplicación es 8081 (puerto Tomcat). La URL de la consola será:
 
 http://localhost:8081/h2-console/
 
-![URL](https://github.com/user-attachments/assets/38e085cb-e8ca-4d97-99f2-8152154cdf94)
+![alt text](URL.png)
 
-4. **Conéctate a la base de datos**:
+5. **Conéctate a la base de datos**:
 
 Una vez accedas a la consola H2, completa los campos de la siguiente manera:
 
@@ -96,22 +99,22 @@ jdbc:h2:mem:196b43f4-768a-4530-a78e-821587e3b808
 
 Luego, haz clic en **"Test Connection"** para verificar la conexión.
 
-![TEST CONNECTION VERIFICADO](https://github.com/user-attachments/assets/53f7709a-9e2b-4921-bd3f-3b99f9f71370)
+![alt text](<TEST CONNECTION VERIFICADO.png>)
 
-5. **Conéctate a la base de datos**:
+6. **Conéctate a la base de datos**:
 
 Después de que la conexión haya sido verificada, haz clic en "Connect".
 
-6. **Ver la tabla clientes**:
+7. **Ver la tabla clientes**:
 
 Una vez que estés conectado, verás la tabla clientes. Haz clic en ella para visualizar los datos guardados.
 
-![CICLEA CLIENTES](https://github.com/user-attachments/assets/44061965-4925-486a-bd3f-3b99f9f71370)
+![alt text](<CLIEQUEA CLIENTES.png>)
 
-7. **Ejecuta la consulta para ver los datos**:
+8. **Ejecuta la consulta para ver los datos**:
 
 Finalmente, para ver los datos almacenados en la tabla clientes, haz clic en "Run".
 
-![TABLA CLIENTES RUN](https://github.com/user-attachments/assets/89adf20a-a254-44c4-90e6-b6c12da8aa30)
+![alt text](<TABLA CLIENTES RUN.png>)
 
 Esto mostrará los datos que se han guardado en la base de datos a través del archivo de propiedades.
